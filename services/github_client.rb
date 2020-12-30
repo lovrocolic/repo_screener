@@ -27,8 +27,8 @@ class GithubClient
           'Authorization' => "Bearer #{GITHUB_ACCESS_TOKEN}"
         }
       ).body
-    rescue RestClient::Exception => _e
-      raise Exception
+    rescue RestClient::ExceptionWithResponse => _e
+      raise
     end
   end
 

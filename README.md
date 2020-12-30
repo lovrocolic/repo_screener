@@ -9,5 +9,5 @@
 ### Usage
     Navigate to the project
     Start development server with command: `docker-compose up`
-    Example: ` GET localhost:4567/api/libraries`
-    Example with parameter: ` GET localhost:4567/api/libraries?language=ruby`
+    Example: `GET localhost:4567/api/libraries`
+    Example with parameter: `GET localhost:4567/api/libraries?language=ruby`
