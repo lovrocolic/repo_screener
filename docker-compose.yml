@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    image: "ruby:2.5.3"
+    ports:
+      - "4567:4567"
+    environment:
+      LANG: "C.UTF-8"
+      LC_ALL: "C.UTF-8"
+      TZ: "Europe/Madrid"
+    volumes:
+      - .:/web
+    working_dir: /web
+    command: bash -c "gem install bundler && bundle install && ruby app.rb -o 0.0.0.0"
