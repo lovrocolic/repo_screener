@@ -11,3 +11,4 @@
     Start development server with command: `docker-compose up`
     Example: `GET localhost:4567/api/libraries`
     Example with parameter: `GET localhost:4567/api/libraries?language=ruby`
+    Valid parameters are: ruby, java, javascript, go and python
